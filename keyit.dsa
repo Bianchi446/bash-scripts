@@ -1,8 +1,0 @@
-# !/bin/bash 
-# Script : keyit.dsa
-# Purpose : This script is used to set up DSA SSH keys. This script must be executed by the user who needs the keys setup 
-
-
-REM_HOST="sample host"
-
-cat $HOME/.ssh/id_rsa.pub | ssh $REM_HOST "cat >> ~/.ssh/authorized_keys"
